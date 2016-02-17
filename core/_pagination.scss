@@ -1,0 +1,35 @@
+
+.pageNav{
+    @include center-block;
+    width:100%;
+    padding:10px 0;
+
+    ul{
+        height: 40px;
+        line-height: 40px;
+    }
+    li{
+        display: inline;
+    }
+    li a{
+        padding: 6px 12px;
+        background-color: $pageNav-def-bgColor;
+        border: 1px solid $pageNav-def-border-color; 
+        @include alink(link) {
+            color: $pageNav-color;
+        }
+        @include alink(hover) {
+            color: $pageNav-color;
+            @include text-decoration-none;
+            border: 1px solid $pageNav-color;
+        }
+    } 
+    li span{
+        color:$pageNav-span-color;
+    }
+    @at-root #currentPage{
+        color: #FFF;
+        background-color: $pageNav-color;
+        border: 1px solid $pageNav-color;
+    }
+}

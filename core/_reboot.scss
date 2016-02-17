@@ -1,0 +1,28 @@
+// Reboot
+//
+// Global resets to common HTML elements and more for easier usage by Bootstrap.
+// Adds additional rules on top of Normalize.css, including several overrides.
+
+body{
+    background:      $body-bg;
+    font-family:     $font-family-base;
+    font-size:       $font-size-root;
+    line-height:     $line-height;
+    color:           $body-color;
+    text-align:      $body-text-align;
+}
+
+a {
+    &:link, &:visited{
+        color: $link-color;
+        text-decoration: $link-decoration;
+    }
+    &:hover, &:active {
+        color: $link-hover-color;
+        text-decoration: $link-hover-decoration;
+    }
+}
+
+.VD{
+    &:link, &:visited{color: #F00;}
+}

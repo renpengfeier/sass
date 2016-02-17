@@ -1,0 +1,44 @@
+// 配置文件
+
+// 选项
+$enable-rounded:            true !default;
+$lte7:                      false !default;//是否兼容ie6,7
+$isRem:                     false !default;//是否使用rem
+
+//body
+$body-color:                 #666 !default;
+$body-bg:                    #FFF !default;
+$body-text-align:            center !default;
+
+// Links
+//
+// Style anchor elements.
+
+$link-color:                 #666 !default;
+$link-decoration:            none !default;
+$link-hover-color:           darken($link-color, 15%) !default;
+$link-hover-decoration:      underline !default;
+
+
+
+// Typography
+//
+// Font, line-height, and color for body text, headings, and more.
+
+$font-family-sans-serif:     "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$font-family-serif:          Georgia, "Times New Roman", Times, serif !default;
+$font-family-monospace:      Menlo, Monaco, Consolas, "Courier New", monospace !default;
+$font-family-chinese:        "微软雅黑","宋体", Arial;
+$font-family-base:           $font-family-chinese !default;
+
+// Pixel value used to responsively scale all typography. Applied to the `<html>` element.
+$font-size-root:             14px !default;
+
+$line-height:                2 !default;
+$border-radius:              5px !default;
+
+//pageNav
+$pageNav-def-bgColor:        #FFF;
+$pageNav-def-border-color:   #CCC;
+$pageNav-color:              #c00;
+$pageNav-span-color:         #666;

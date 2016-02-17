@@ -1,0 +1,11 @@
+//function
+//-----------------------------------------------------  
+
+// px转em
+@function pxToRem($px, $base: $font-size-root) {
+	@if $isRem {
+		@return ($px / $base) * 1rem;		
+	} @else {
+		@return $px;
+	} 
+}

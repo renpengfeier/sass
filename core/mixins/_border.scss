@@ -1,0 +1,19 @@
+//
+// 边框 renpgfeier@gmail.com 2016-02-17
+// 用法:
+//     1.每个属性不一样 @include border((top,left),(1px,2px),(solid,solid),(#CCC,#DDD));
+//     2.每个属性一样   @include border((top,left),1px,solid,#CCC);
+//     3.单个用法       @include border(top,1px,solid,#CCC);
+//
+@mixin border($att-list:(top,left),$width:(1px,1px),$stype:(solid,solid),$color:(#FFF,#FFF)) {
+	$i: 0;
+
+	$widthLength:length($width);
+
+	@each $att in $att-list {
+		$i: $i + 1;
+		@if($widthLength == 1){$i:1;}
+
+		border-#{$att}:nth($width,$i) nth($stype,$i) nth($color,$i);
+	}
+}

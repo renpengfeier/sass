@@ -1,0 +1,16 @@
+
+@mixin pos-abs($top:null,$right:null,$bottom:null,$left:null) {
+  position:  absolute;
+  top:       $top;
+  right:     $right;
+  bottom:    $bottom;
+  left:      $left;
+}
+
+@mixin pos-rlt($top:null,$right:null,$bottom:null,$left:null) {
+  position:  relative;
+  top:       $top;
+  right:     $right;
+  bottom:    $bottom;
+  left:      $left;
+}

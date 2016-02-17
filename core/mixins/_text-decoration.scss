@@ -1,0 +1,9 @@
+//有下划线
+@mixin text-decoration() {
+  text-decoration: underline;
+}
+
+//无下划线
+@mixin text-decoration-none() {
+  text-decoration: none;
+}

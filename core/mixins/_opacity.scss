@@ -1,0 +1,9 @@
+
+@mixin opacity($num) {
+	@if $lte7 {
+		*zoom: 1;	
+	}	
+	filter: alpha(opacity=$num);
+	opacity: $num / 100;
+}
+

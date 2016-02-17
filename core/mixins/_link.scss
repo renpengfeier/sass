@@ -1,0 +1,11 @@
+@mixin alink($link:link) {
+	@if $link == link {
+		&:link, &:visited{
+			@content;
+		}
+	} @else {
+		&:hover, &:active{
+			@content;
+		}
+	}
+}
