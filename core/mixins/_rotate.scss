@@ -1,0 +1,9 @@
+//
+// CSS3旋转
+// 用法：@include rotate(9deg);
+@mixin rotate($num){
+	transform:rotate($num);
+	-ms-transform:rotate($num); // Internet Explorer
+	-moz-transform:rotate($num); // Firefox
+	-webkit-transform:rotate($num); // Safari 和 Chrome
+}
