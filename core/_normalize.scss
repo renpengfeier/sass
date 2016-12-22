@@ -1,3 +1,4 @@
+@charset "UTF-8";
 
 html {
   @if $isRem {
@@ -21,6 +22,8 @@ b,
 strong {
   font-weight: bold;
 }
+
+input,button,select,textarea{-webkit-appearance:none; outline:none;}
 
 button,
 html input[type="button"], // 1
