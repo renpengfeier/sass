@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 @mixin alink($link:link) {
 	@if $link == link {
 		&:link, &:visited{
