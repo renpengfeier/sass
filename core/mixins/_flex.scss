@@ -1,0 +1,6 @@
+@charset "UTF-8";
+
+@mixin flex() {
+	display: -webkit-flex; /* Safari */
+ 	display: flex;
+}
