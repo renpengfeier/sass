@@ -11,7 +11,7 @@
 		height: 50px;
 
 		a{
-			display: block;
+			display: inline-block;
 			@include size(100%,100%);
 			overflow: hidden;
 		}
