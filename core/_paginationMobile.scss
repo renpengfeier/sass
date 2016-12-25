@@ -11,12 +11,12 @@
 		height: 50px;
 
 		a{
-			display: inline-block;
+			display: block;
 			@include size(100%,100%);
 			overflow: hidden;
 		}
 		i{
-			display: block;
+			display: inline-block;
 			margin: 18px auto 0 auto;
 			@include size(10px,10px);
 			
